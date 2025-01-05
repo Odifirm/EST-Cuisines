@@ -7,6 +7,7 @@ const ContactWidget = () => {
     useStateContext();
 
   const toggleMenu = () => {
+    console.log(activeContactSection);
     setActiveContactionSection(!activeContactSection);
   };
   return (
@@ -17,7 +18,7 @@ const ContactWidget = () => {
     >
       <div className="flex justify-between items-center  ">
         <div>
-          <span className=" text-xl">E S T Cuisines</span>
+          <span className=" text-xl tracking-widest">Gaon Walla</span>
         </div>
         <div
           className="bg-primary rounded-full p-2
@@ -74,9 +75,11 @@ const ContactWidget = () => {
       <div className="absolute bottom-11 w-full">
         <hr />
         <div className="py-4">
-          <p>+91 760 90 52 502</p>
+          <p>+91 879 993 8000</p>
           <p>
-            <a href="mailto:info@gmail.com">info@email.com</a>
+            <a href="mailto:catering.gaowala@gmail.com">
+              catering.gaowala@gmail.com
+            </a>
           </p>
         </div>
       </div>

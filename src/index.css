@@ -40,6 +40,18 @@ body::-webkit-scrollbar-thumb:hover {
   background: #555; /* Color of the scrollbar thumb on hover */
 }
 
+.cursor {
+  display: inline-block;
+  background-color: black;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+
 @font-face {
   font-family: "Marcellus";
   src: url("./assets/fonts/Marcellus-Regular.ttf") format("truetype"); /* Adjust the path */
@@ -57,8 +69,14 @@ body::-webkit-scrollbar-thumb:hover {
   }
 }
 @layer utilities {
+  .forminput {
+    @apply block py-2.5 px-0 w-full  text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-base focus:text-secondary focus:outline-none focus:ring-0 focus:border-secondary;
+  }
+  .forminputlabels {
+    @apply peer-focus:font-medium absolute  text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 peer-focus:text-secondary peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6;
+  }
   .heading {
-    @apply text-main;
+    @apply text-[0.9rem] tracking-widest my-2;
   }
 
   .underline-animation {
@@ -88,6 +106,4 @@ body::-webkit-scrollbar-thumb:hover {
     color: #213547;
     background-color: #ffffff;
   }
-
-
 }

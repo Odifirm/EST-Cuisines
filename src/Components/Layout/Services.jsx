@@ -7,10 +7,36 @@ const Services = () => {
   const [hoverIndex, setHoverIndex] = useState(null);
 
   return (
-    <div className="p-8">
-      <div className="text-center font-bold">
-        <p className="text-base text-black">Our Services</p>
-        <span className="text-[50px] text-black">From concept to cuisine</span>
+    <div className="px-8 py-3 mb-10">
+      <div className="font-bold p-5 px-10">
+        <p className="text-[0.5rem] text-left tracking-widest text-secondary py-3">
+          WHAT WE DO
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-3">
+          <div>
+            <span className="text-[30px] text-left text-black tracking-widest">
+              COOKING & CATERIGN
+            </span>
+          </div>
+          <div>
+            <p className="text-secondary text-[0.7rem]">
+              We are extremely happy to provide refined catering services for
+              your special events! By choosing us, you get a guarantee that
+              everything is made perfectly from tiny appetizers to an elegant
+              wedding cake.
+            </p>
+          </div>
+          <div>
+            <p className=" text-[0.7rem] cursor-pointer float-end">
+              <a
+                href="/about"
+                className="flex gap-2 items-center   transition-all"
+              >
+                About Us <Icons.Right />
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
       <div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 p-5">

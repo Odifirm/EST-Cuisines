@@ -10,7 +10,9 @@ import { FiEdit, FiArrowLeft, FiArrowRight } from 'react-icons/fi';
 import { IoIosGitNetwork } from "react-icons/io";
 import { CiPower, CiMenuFries } from "react-icons/ci";
 import { ImProfile } from "react-icons/im";
-import { CiSearch, CiUser } from "react-icons/ci";
+import { CiSearch } from "react-icons/ci";
+import { CiUser } from "react-icons/ci";
+
 import { RiAdminFill } from "react-icons/ri";
 import { TiTick } from "react-icons/ti";
 import { RxCross2 } from "react-icons/rx";
@@ -28,6 +30,12 @@ import { FaXTwitter } from "react-icons/fa6";
 import { AiFillYoutube } from "react-icons/ai";
 import { HiArrowLongLeft } from "react-icons/hi2";
 import { HiArrowLongRight } from "react-icons/hi2";
+import { SlPencil } from "react-icons/sl";
+import { FaUserGroup } from "react-icons/fa6";
+import { BsInfoCircle } from "react-icons/bs";
+import { PiPhoneCallLight } from "react-icons/pi";
+import { TbDeviceVisionPro } from "react-icons/tb";
+import { GiCampCookingPot } from "react-icons/gi";
 
 
 export const Icons = {
@@ -52,6 +60,7 @@ export const Icons = {
     GroupEmp: MdGroups,
     Mail: IoMail,
     Person: CiUser,
+    MultiPerson: FaUserGroup,
     Bell: FaBell,
     Power: CiPower,
     Profile: ImProfile,
@@ -79,4 +88,9 @@ export const Icons = {
     Twitter: FaXTwitter,
     Instagram: FaInstagram,
     Youtube: AiFillYoutube,
+    Pencil: SlPencil,
+    Info: BsInfoCircle,
+    Phone: PiPhoneCallLight,
+    Vision: TbDeviceVisionPro,
+    Cooking: GiCampCookingPot,
 };

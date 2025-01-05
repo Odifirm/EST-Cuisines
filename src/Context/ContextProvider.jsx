@@ -4,7 +4,7 @@ import axiosService from "../Services/api";
 const StateContext = createContext();
 
 export const ContextProvider = ({ children }) => {
-  const [activeMenu, setActiveMenu] = useState(false);
+  const [activeSidebar, setActiveSidebar] = useState(false);
   const [activeContactSection, setActiveContactionSection] = useState(false);
   const [height, setHeight] = useState(null);
   const [greeting, setGreeting] = useState("");
@@ -32,8 +32,8 @@ export const ContextProvider = ({ children }) => {
   return (
     <StateContext.Provider
       value={{
-        activeMenu,
-        setActiveMenu,
+        activeSidebar,
+        setActiveSidebar,
         activeContactSection,
         setActiveContactionSection,
         height,
